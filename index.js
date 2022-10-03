@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
     res.send("Home")
 })
 
+app.get('/check', (req, res) => {
+    res.send("checking...")
+})
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
