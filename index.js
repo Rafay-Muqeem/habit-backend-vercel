@@ -18,10 +18,10 @@ app.get('/', (req, res) => {
     res.send("Home")
 })
 
-app.get('/api/auth/getusers', async (req, res) => {
-    const users = await User.find();
-    res.json(users);
-})
+// app.get('/api/auth/getusers', async (req, res) => {
+//     const users = await User.find();
+//     res.json(users);
+// })
 
 app.get('/check', (req, res) => {
     res.send("checking...")
