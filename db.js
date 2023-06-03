@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
-// const mongoURI = "mongodb://localhost:27017/habit-app";
+const mongoURI = "mongodb+srv://krafay92:123R%40f%40y@cluster0.wfnbnmk.mongodb.net/?retryWrites=true&w=majority";
 
-const mongoURI = process.env.DATABASE
+// const mongoURI = process.env.DATABASE
 const connectToMongo = () => {
     mongoose.connect(mongoURI, {
         useNewUrlParser: true,
